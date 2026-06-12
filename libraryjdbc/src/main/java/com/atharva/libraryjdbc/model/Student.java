@@ -12,9 +12,7 @@ public class Student extends User{
         return "Student";
     }
 
-    public Object getId() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+
 
 
 }

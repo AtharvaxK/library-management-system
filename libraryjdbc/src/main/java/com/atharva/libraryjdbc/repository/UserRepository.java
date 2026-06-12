@@ -99,6 +99,16 @@ public class UserRepository {
         return jdbcTemplate.query(sql, mapper);
        }
 
+       public void deleteUser(int id){
+        String sql="DELETE FROM users WHERE user_id=?";
+            try {
+                jdbcTemplate.update(sql,id);
+            }
+            catch (DataAccessException e){
+                System.out.println(e.getMessage());
+            }
+       }
+
 
     
 }
